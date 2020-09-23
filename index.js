@@ -16,13 +16,21 @@ module.exports = Ddl
  *
  * @class Ddl
  */
-function Ddl() {}
+function Ddl() {
+  this.type = "object";
+  this.properties = {};
+  this.required = [];
+}
 
 define(Ddl, "sqlite3", function() {
   return require("./lib/sqlite3")
 })
 
 define(Ddl, "postgresql", function() {
+  return require("./lib/postgresql")
+})
+
+define(Ddl, "postgresqlConstraints", function() {
   return require("./lib/postgresql")
 })
 

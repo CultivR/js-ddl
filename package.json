@@ -21,30 +21,28 @@
 	],
 	"homepage": "https://github.com/moll/js-ddl",
 	"bugs": "https://github.com/moll/js-ddl/issues",
-
 	"author": {
 		"name": "Andri Möll",
 		"email": "andri@dot.ee",
 		"url": "http://themoll.com"
 	},
-
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/moll/js-ddl.git"
 	},
-
-	"licenses": [{
-		"type": "LAGPL",
-		"url": "https://github.com/moll/js-ddl/blob/master/LICENSE"
-	}],
-
+	"licenses": [
+		{
+			"type": "LAGPL",
+			"url": "https://github.com/moll/js-ddl/blob/master/LICENSE"
+		}
+	],
 	"main": "index.js",
-	"scripts": {"test": "make test"},
-
+	"scripts": {
+		"test": "make test"
+	},
 	"dependencies": {
 		"lazy-object": ">= 1.0.0 < 2"
 	},
-
 	"devDependencies": {
 		"underscore": ">= 1.5.2 < 2",
 		"mocha": ">= 1.12.0 < 3",
@@ -56,4 +54,3 @@
 		"pg-native": ">= 1.7.1 < 2"
 	}
 }
-
